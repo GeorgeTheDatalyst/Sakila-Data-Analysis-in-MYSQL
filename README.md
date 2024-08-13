@@ -10,7 +10,7 @@ The Sakila sample database is one of the most widely used sample databases. The 
 ## Exlolatory Data Analysis of Sakila
 ## Questions Tackled
 1. All films with PG-13 films with rental rate of 2.99 or lower
-   ```sql
+```sql
    use sakila;
 SELECT 
     film_id, title, rating

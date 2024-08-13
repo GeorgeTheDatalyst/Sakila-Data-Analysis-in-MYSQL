@@ -245,14 +245,14 @@ This query counts the number of movies each actor has acted in.
 ```
 ```
 Output:  
-actor_id   title      total_movies  
-58	   BACKLASH UNDEFEATED	1  
-58	      BETRAYED REAR   	1  
-58	      CAPER MOTIONS   	1  
-58	      CATCH AMISTAD   	1  
-58    CHANCE RESURRECTION	1  
-58   	CONFUSED CANDLES	   1  
-58	     CUPBOARD SINNERS	1  
+actor_id            title                total_movies  
+58	         BACKLASH UNDEFEATED                  	1  
+58	         BETRAYED REAR   	                     1  
+58	         CAPER MOTIONS   	                     1  
+58	         CATCH AMISTAD   	                     1  
+58         CHANCE RESURRECTION	                  1  
+58   	     CONFUSED CANDLES	                     1  
+58	        CUPBOARD SINNERS	                     1  
 
 ```
 ```

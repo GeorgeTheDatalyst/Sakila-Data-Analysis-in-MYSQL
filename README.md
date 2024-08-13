@@ -20,7 +20,16 @@ WHERE
     rental_rate <= 2.99 AND rating = 'PG-13'
 ORDER BY film_id;
 ```
-3. All films that have deleted scenes
+2. All films that have deleted scenes
+```sql
+SELECT 
+    film_id, title, special_features
+FROM
+    film
+WHERE
+    special_features REGEXP ('Deleted Scenes')
+GROUP BY film_id;
+```
 4. All active customers
 5. Names of customers who rented a movie on 26th July 2005
 6. How many rentals we do on each day?

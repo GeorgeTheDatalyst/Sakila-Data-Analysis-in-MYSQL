@@ -244,6 +244,17 @@ ORDER BY COUNT(*) DESC
 This query counts the number of movies each actor has acted in.
 ```
 ```
+Output:
+actor_id   title      total_movies
+58	   BACKLASH UNDEFEATED	1
+58	      BETRAYED REAR   	1
+58	      CAPER MOTIONS   	1
+58	      CATCH AMISTAD   	1
+58    CHANCE RESURRECTION	1
+58   	CONFUSED CANDLES	   1
+58	     CUPBOARD SINNERS	1
+```
+```
 ## Conclusion
 The queries provided in this project demonstrate various techniques for extracting and 
 analyzing data from the Sakila database. These queries can be used to generate reports, 

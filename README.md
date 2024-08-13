@@ -1,4 +1,5 @@
 # Sakila Data Analysis in MYSQL
+# Project Report: Sakila Database Queries.
 ## Introdution
 The Sakila sample database is one of the most widely used sample databases. The Sakila database models the DVD rental store business, which contains content such as films, actors, inventory, stores, customers and staffs.
 ## Project Review
@@ -13,7 +14,9 @@ The main objectives of this project are:
 2. To optimize SQL queries for better performance and accuracy.  
 
 3. To provide insights and reports based on the extracted data.  
-
+## Queries and Results.
+I carefully analyzed the table relationship in the sakila database and then conducted table 
+relations using the JOIN clause. The table figure below shows sakila DBD.
 ## Database Schema
 ![image](https://github.com/user-attachments/assets/09c6f06b-7c20-4f1d-b104-5d95dc80a50c)
 

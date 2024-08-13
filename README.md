@@ -184,6 +184,7 @@ ORDER BY COUNT(*) DESC
 ```
 This query counts the number of movies each actor has acted in.
 ```
+```
 ## Conclusion
 The queries provided in this project demonstrate various techniques for extracting and 
 analyzing data from the Sakila database. These queries can be used to generate reports, 

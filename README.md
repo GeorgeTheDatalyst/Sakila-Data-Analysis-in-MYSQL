@@ -20,6 +20,10 @@ WHERE
     rental_rate <= 2.99 AND rating = 'PG-13'
 ORDER BY film_id;
 ```
+This query retrieves all films with a PG-13 rating and a rental rate of 2.99 or lower, 
+ordered by film ID.
+```
+```
 2. All films that have deleted scenes
 ```sql
 SELECT 
@@ -29,6 +33,9 @@ FROM
 WHERE
     special_features REGEXP ('Deleted Scenes')
 GROUP BY film_id;
+```
+This query lists all films that include deleted scenes in their special features.
+```
 ```
 3. All active customers
 ```sql
@@ -41,6 +48,9 @@ FROM
 WHERE
     active = 1
 GROUP BY customer_id;
+```
+This query retrieves all active customers, displaying their customer ID and full name.
+```
 ```
 4. Names of customers who rented a movie on 26th July 2005
 ```sql
@@ -56,6 +66,9 @@ WHERE
     rental_date REGEXP ('2005-07-26')
 ORDER BY rental_id ASC;
 ```
+This query lists the names of customers who rented a movie on July 26, 2005.
+```
+```
 5. How many rentals we do on each day?
 ```sql
 SELECT 
@@ -64,6 +77,10 @@ FROM
     rental
 GROUP BY rental_date
 ORDER BY COUNT(inventory_id);
+```
+This query shows the total number of rentals for each day, ordered by the number of 
+rentals.
+```
 ```
 6. All SciFix films in catalogue
 ```sql
@@ -79,6 +96,9 @@ FROM
 WHERE
     ct.name = 'Sci-Fi';
 ```
+This query retrieves all Sci-Fi films in the catalogue
+```
+```
 7. Customers and how many movies they rented from us so far?
 ```sql
 use sakila;
@@ -92,6 +112,9 @@ FROM
     rental rl USING (customer_id)
 GROUP BY customer_id;
 ```
+This query lists customers and the number of movies they have rented so far.
+```
+```
 8.  Which movies should we discontinue from our catalogue (less than 2 lifetime rentals)
 ```sql
 SELECT 
@@ -102,6 +125,10 @@ FROM
     film fl USING (film_id)
 GROUP BY film_id
 HAVING COUNT(i.inventory_id) < 2;
+```
+This query identifies movies that should be discontinued from the catalogue due to 
+having less than 2 lifetime rentals
+```
 ```
 9. Which movies are not returned yet?
 ```sql
@@ -117,6 +144,9 @@ WHERE
     rental_date IS NOT NULL
         AND return_date IS NULL;
 ```
+This query lists all movies that have not been returned yet.
+```
+```
 10. How many distinct last names we have in the data?
 ```sql
 SELECT 
@@ -131,6 +161,9 @@ WHERE
 GROUP BY last_name
 ORDER BY last_name;
 ```
+This query counts the number of distinct last names in the customer data.
+```
+```
 11.  How much money and rentals we make for Store 1 by day?
 ```sql
 SELECT 
@@ -143,7 +176,11 @@ FROM
     payment p ON p.staff_id = st.staff_id
 GROUP BY payment_date , store_id
 HAVING store_id = 1;
-``` 
+```
+This query calculates the total amount of money and the number of rentals made for 
+Store 1 by day.
+```
+```
 12. What are the three top earning days so far?
 ```sql
 SELECT 
@@ -152,6 +189,9 @@ FROM
     payment
 ORDER BY amount DESC
 LIMIT 3;
+```
+This query identifies the top three earning days so far.
+```
 ```
 13. Countries with highest number of customers (top 3 )
 ```sql
@@ -168,6 +208,9 @@ FROM
 GROUP BY cr.country
 ORDER BY COUNT(*) DESC
 LIMIT 3;
+```
+This query lists the top three countries with the highest number of customers.
+```
 ```
 14. number of movies acted by each actor
 ```sql

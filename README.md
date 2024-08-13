@@ -1,4 +1,6 @@
 # Sakila Data Analysis in MYSQL
+![image](https://github.com/user-attachments/assets/97c76431-d73f-42ab-9d10-4fbbd9441156)
+
 # Project Report: Sakila Database Queries.
 ## Introdution
 The Sakila sample database is one of the most widely used sample databases. The Sakila database models the DVD rental store business, which contains content such as films, actors, inventory, stores, customers and staffs.

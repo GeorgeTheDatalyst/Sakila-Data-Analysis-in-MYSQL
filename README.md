@@ -10,10 +10,9 @@ rentals, and more.
 ## Objectives
 The main objectives of this project are:  
 1. To retrieve specific data from the Sakila database based on given criteria.  
-
 2. To optimize SQL queries for better performance and accuracy.  
-
-3. To provide insights and reports based on the extracted data.  
+3. To provide insights and reports based on the extracted data.
+  
 ## Queries and Results.
 I carefully analyzed the table relationship in the sakila database and then conducted table 
 relations using the JOIN clause. The table figure below shows sakila DBD.

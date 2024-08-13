@@ -8,9 +8,12 @@ contains information about a fictional video rental store, including data on fil
 rentals, and more.
 ## Objectives
 The main objectives of this project are:  
--1. To retrieve specific data from the Sakila database based on given criteria.
--2. To optimize SQL queries for better performance and accuracy.
--3. To provide insights and reports based on the extracted data.
+1. To retrieve specific data from the Sakila database based on given criteria.  
+
+2. To optimize SQL queries for better performance and accuracy.  
+
+3. To provide insights and reports based on the extracted data.  
+
 ## Database Schema
 ![image](https://github.com/user-attachments/assets/09c6f06b-7c20-4f1d-b104-5d95dc80a50c)
 

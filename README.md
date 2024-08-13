@@ -244,7 +244,7 @@ ORDER BY COUNT(*) DESC
 This query counts the number of movies each actor has acted in.
 ```
 ```
-Output:
+Output:  
 actor_id   title      total_movies  
 58	   BACKLASH UNDEFEATED	1  
 58	      BETRAYED REAR   	1  
